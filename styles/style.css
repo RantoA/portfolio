@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url(./fonts/Nunito/static/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url(./fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
 body{
     background-image: url('../images/backgroun.png');
     width: 100%;
@@ -5,5 +14,5 @@ body{
 }
 .main{
     color: red;
-    font-size: large;
+    font-family: 'Nunito-Bold', 'Nunito-Regular';
 }
