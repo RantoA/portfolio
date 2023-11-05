@@ -7,12 +7,52 @@
     src: url(./fonts/Nunito/static/Nunito-Regular.ttf);
 }
 
-body{
+body {
+    font-family: 'Nunito-Bold', 'Nunito-Regular';
+    color: #eee;
     background-image: url('../images/backgroun.png');
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
 }
-.main{
-    color: red;
-    font-family: 'Nunito-Bold', 'Nunito-Regular';
+
+.profil {
+    width: 400px;
+    height: 100%;
+    background:none; /* Ajoutez une couleur de fond semi-transparente à la classe profil */
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.menu,ul{
+    list-style: none;
+    padding: 25px;
+}
+.menu,ul,li{
+    padding: 20px;
+    
+}
+
+li, a:hover{
+    color: gold;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.contenue {
+    margin-left: 400px;
+    padding: 20px;
+    width: calc(100% - 400px);
+    height: 100%;
+    overflow-y: auto;
+}
+.titre{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7e7c7c70;
+    color: rgb(228, 96, 48);
 }
