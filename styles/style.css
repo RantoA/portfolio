@@ -1,32 +1,39 @@
 body {
     font-family: 'Nunito-Bold', 'Nunito-Regular';
     color: #eee;
-    background-image: url('../images/backgroun.png');
+    /* background-image: url('../images/backgroun.png'); */
+    background-color: rgba(0, 0, 0, 0.966);
     background-attachment: fixed;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scrollbar-width: none;
 }
 
 .profil {
     width: 400px;
     height: 100%;
-    background:none; /* Ajoutez une couleur de fond semi-transparente à la classe profil */
+    background:none; 
     position: fixed;
     left: 0;
     top: 0;
     overflow: hidden;
 }
+.menulist {
+    color: blue;
+}
 .menu,ul{
     list-style: none;
     padding: 25px;
 }
-.menu,ul,li{
+.menu,ul,li.menulist{
     padding: 20px;
+    
     
 }
 
-li, a:hover{
+li.menulist, a:hover{
     color: gold;
     
 }
@@ -51,7 +58,7 @@ a{
 
 .profilDetails {
     display: flex;
-    align-items: flex-start; /* Aligne les éléments au début pour les aligner verticalement */
+    align-items: flex-start;    
     margin: 20px 20px;
   
 }
@@ -68,6 +75,20 @@ a{
 }
 
 .profilimage {
-    flex: 0 0 auto; /* Permet à l'image de conserver sa taille intrinsèque */
-    margin-left: 10px; /* Un espacement optionnel entre le texte et l'image */
+    flex: 0 0 auto; 
+    margin-left: 10px; 
+}
+.company{
+    margin-top: 20px;
+    margin-left:  50px;
+    margin-bottom: 50px;
+}
+.stackinfo{
+    padding-left: 100px;
+}
+.titreduposte{
+    color: gold;
+}
+.technolist{
+    font-size: 17px;
 }
