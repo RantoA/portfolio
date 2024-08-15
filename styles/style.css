@@ -45,13 +45,29 @@ a{
     margin-top: 10px;
     padding: 10px;
     background-color: #7e7c7c70;
+    border-radius: 5px;
     color: rgb(228, 96, 48);
 }
-.profilDetails{
+
+.profilDetails {
     display: flex;
+    align-items: flex-start; /* Aligne les éléments au début pour les aligner verticalement */
+    margin: 20px 20px;
+  
 }
+
 .photoDeProfil{
-    width: 27rem;
-    height:30rem;
-    border-radius: 15px;
+    width: 17rem;
+    height:20rem;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.information {
+    flex: 1;
+}
+
+.profilimage {
+    flex: 0 0 auto; /* Permet à l'image de conserver sa taille intrinsèque */
+    margin-left: 10px; /* Un espacement optionnel entre le texte et l'image */
 }
