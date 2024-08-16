@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="shortcut icon" href="./images/profil.jpg" type="image/x-icon">
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
   </head>
   <body>
@@ -246,18 +252,62 @@
         </div>
 
         <!-- Compétance technique -->
-        <div id="projet">
-          <h3 class="titre">PROJET REALISE</h3>
-        </div>
+        
 
         <div id="contact">
           <h3 class="titre">CONTACT</h3>
           <div class="companie">
+            <ul class="contactlist">
+              <li><span><a href=""><img class="contactimage" src="./images/icones/whatsapp.svg" alt="logo whatsapp" srcset=""><b>+261343653614</b></a></span></li>
+              <li><span><a href="mailto:rantoandriamamonjy@gmail.com"><img class="contactimage" src="./images/icones/gmail.svg" alt="logo email" srcset=""><b>rantoandriamamonjy@gmail.com</b></a></span></li>
+              <li><span><a href="live:.cid.c9d9c0d076593d6a" target="_blank" rel="noopener noreferrer"><img class="contactimage" src="./images/icones/skype.svg" alt="logo skype" srcset=""><b>Ranto ANDRIAMAMONJY</b></a></span></li>
+              <li><span><a href="https://www.linkedin.com/in/ranto-andriamamonjy-435277203/" target="_blank" rel="noopener noreferrer"><img class="contactimage" src="./images/icones/LinkedIn.svg" alt="logo linkin" srcset=""><b>Ranto ANDRIAMAMONJY</b></a></span></li>
+            </ul>
 
           </div>
         </div>
 
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Sélectionner le conteneur pour afficher l'image
+        var main = document.getElementById("imageprincipal");
+    
+        // Fonction pour afficher une image et remplacer l'image précédente
+        function showimage(imageId) {
+            // Sélectionner l'élément image à partir de son ID
+            var elementToShow = document.getElementById(imageId);
+    
+            // Vérifier si l'élément existe et obtenir son attribut src
+            if (elementToShow) {
+                var src = elementToShow.getAttribute("src");
+    
+                // Créer un nouvel élément image
+                var newImage = document.createElement("img");
+                newImage.setAttribute("src", src);
+    
+                // Supprimer toutes les images existantes dans le conteneur
+                while (main.firstChild) {
+                    main.removeChild(main.firstChild);
+                }
+    
+                // Ajouter la nouvelle image au conteneur
+                main.appendChild(newImage);
+            } else {
+                console.error("Aucun élément avec l'ID fourni n'a été trouvé.");
+            }
+        }
+    
+        // Affichage par défaut : afficher l'image avec l'ID "imageid2" au chargement
+        showimage("imageid2");
+    
+        // Exposer la fonction showimage globalement si nécessaire
+        window.showimage = showimage;
+    });
+    
+    
+
+    </script>
   </body>
 </html>
